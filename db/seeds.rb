@@ -5,6 +5,29 @@
 #
 #   movies = Movie.create([{ name: "Star Wars" }, { name: "Lord of the Rings" }])
 #   Character.create(name: "Luke", movie: movies.first)
+puts "🌱 Seeding pizzas..."
+
+
+Pizza.create!([
+ 
+  {
+    name: "hawaiian pizza",
+    ingredients: "pineapple,lotsa cheese, hams",
+    
+  },
+  {
+    name: "chicken tikka pizza",
+    ingredients: "chicken,crust",
+
+},
+  
+
+ 
+])
+
+puts "✅ Done seeding!"
+
+
 puts "🌱 Seeding retaurants..."
 
 # Spice Data from spicejungle.com
@@ -20,6 +43,24 @@ Restaurant.create!([
     address: "Maseno",
 
 },
+
+puts "🌱 Seeding retaurants..."
+
+
+RestaurantPizza.create!([
+ 
+  {
+    restaurant_id: "1",
+    pizza_id: "2",
+    price:"250"
+    
+  },
+  {
+    restaurant_id: "1",
+    pizza_id: "2",
+    price:"250"
+},
+  
   
 
  
