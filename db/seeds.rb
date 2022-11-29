@@ -5,3 +5,25 @@
 #
 #   movies = Movie.create([{ name: "Star Wars" }, { name: "Lord of the Rings" }])
 #   Character.create(name: "Luke", movie: movies.first)
+puts "🌱 Seeding retaurants..."
+
+# Spice Data from spicejungle.com
+Restaurant.create!([
+ 
+  {
+    name: "modern gallery",
+    address: "Backstreet",
+    
+  },
+  {
+    name: "caroline herinne",
+    address: "Maseno",
+
+},
+  
+
+ 
+])
+
+puts "✅ Done seeding!"
+
